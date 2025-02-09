@@ -1,4 +1,4 @@
-﻿namespace MessageService.Model
+﻿namespace MessageService.Models
 {
     public class Message
     {

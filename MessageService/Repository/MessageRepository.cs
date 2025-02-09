@@ -1,4 +1,4 @@
-﻿using MessageService.Model;
+﻿using MessageService.Models;
 using Microsoft.Data.SqlClient;
 
 namespace MessageService.Repository

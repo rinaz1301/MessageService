@@ -1,6 +1,6 @@
-@MessageService_HostAddress = http://localhost:5063
+@MessageService_HostAddress = http://localhost:7271
 
-GET {{MessageService_HostAddress}}/weatherforecast/
+GET {{MessageService_HostAddress}}/Message?time=2024-01-01/
 Accept: application/json
 
 ###
