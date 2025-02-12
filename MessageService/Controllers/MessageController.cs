@@ -25,8 +25,9 @@ namespace MessageService.Controllers
         [HttpPost]
         public async Task<IActionResult> SendMessage([FromBody] Message message)
         {
+            message.Timestamp = DateTime.Now;
             await _repository.AddMessage(message);
-            await _hubContext.Clients.All.SendAsync("ReceiveMessage", message.Text);
+            await _hubContext.Clients.All.SendAsync("ReceiveMessage", message);
             return Ok();
         }
 
